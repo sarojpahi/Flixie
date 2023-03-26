@@ -5,13 +5,4 @@ import { Component, HostListener } from '@angular/core';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
-export class NavbarComponent {
-  navbg: any;
-  @HostListener('document:scroll') scrollover() {
-    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-      this.navbg = {
-        'background-color': '#000',
-      };
-    } else this.navbg = {};
-  }
-}
+export class NavbarComponent {}
